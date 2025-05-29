@@ -29,12 +29,12 @@
 | `sls_execute_sql_query` | 在指定时间范围内对日志存储执行SQL查询          | `project`：SLS项目名称（必需）<br>`logStore`：SLS日志存储名称（必需）<br>`query`：SQL查询语句（必需）<br>`fromTimestampInSeconds`：查询开始时间戳（必需）<br>`toTimestampInSeconds`：查询结束时间戳（必需）<br>`limit`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 使用适当的时间范围优化查询性能<br>- 限制返回结果数量避免获取过多数据               |  
 | `sls_translate_text_to_sql_query` | 将自然语言描述转换为SLS SQL查询语句         | `text`：查询的自然语言描述（必需）<br>`project`：SLS项目名称（必需）<br>`logStore`：SLS日志存储名称（必需）<br>`regionId`：阿里云区域ID | - 适用于不熟悉SQL语法的用户<br>- 对于复杂查询，可能需要优化生成的SQL             |  
 | `sls_diagnose_query` | 诊断SLS查询问题，提供失败原因分析            | `query`：待诊断的SLS查询（必需）<br>`errorMessage`：查询失败的错误信息（必需）<br>`project`：SLS项目名称（必需）<br>`logStore`：SLS日志存储名称（必需）<br>`regionId`：阿里云区域ID | - 查询失败时使用此工具了解根本原因<br>- 根据诊断建议修改查询语句                  |  
-| `sls_list_etls` | 列出项目内的数据加工任务，支持名称模糊搜索         | `project`：SLS项目名称（必需）<br>`logStore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关数据加工任务<br>- 限制返回结果数量避免获取过多数据          |  
-| `sls_list_maxcompute_exports` | 列出项目内的MaxCompute投递任务，支持名称模糊搜索 | `project`：SLS项目名称（必需）<br>`logStore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相MaxCompute投递任务<br>- 限制返回结果数量避免获取过多数据   |  
-| `sls_list_oss_exports` | 列出项目内的OSS投递任务，支持名称模糊搜索        | `project`：SLS项目名称（必需）<br>`logStore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关OSS投递任务<br>- 限制返回结果数量避免获取过多数据         |  
-| `sls_list_osshdfs_exports` | 列出项目内的OSS-HDFS投递任务，支持名称模糊搜索   | `project`：SLS项目名称（必需）<br>`logStore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关OSS-HDFS投递任务<br>- 限制返回结果数量避免获取过多数据    |  
-| `sls_list_scheduled_sqls` | 列出项目内的定时SQL任务，支持名称模糊搜索        | `project`：SLS项目名称（必需）<br>`logStore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关定时SQL任务<br>- 限制返回结果数量避免获取过多数据         |  
-| `sls_list_ingestions` | 列出项目内的OSS导入任务，支持名称模糊搜索        | `project`：SLS项目名称（必需）<br>`logStore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关OSS导入任务<br>- 限制返回结果数量避免获取过多数据         |  
+| `sls_list_etls` | 列出项目内的数据加工任务，支持名称模糊搜索         | `project`：SLS项目名称（必需）<br>`logstore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关数据加工任务<br>- 限制返回结果数量避免获取过多数据          |  
+| `sls_list_maxcompute_exports` | 列出项目内的MaxCompute投递任务，支持名称模糊搜索 | `project`：SLS项目名称（必需）<br>`logstore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相MaxCompute投递任务<br>- 限制返回结果数量避免获取过多数据   |  
+| `sls_list_oss_exports` | 列出项目内的OSS投递任务，支持名称模糊搜索        | `project`：SLS项目名称（必需）<br>`logstore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关OSS投递任务<br>- 限制返回结果数量避免获取过多数据         |  
+| `sls_list_osshdfs_exports` | 列出项目内的OSS-HDFS投递任务，支持名称模糊搜索   | `project`：SLS项目名称（必需）<br>`logstore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关OSS-HDFS投递任务<br>- 限制返回结果数量避免获取过多数据    |  
+| `sls_list_scheduled_sqls` | 列出项目内的定时SQL任务，支持名称模糊搜索        | `project`：SLS项目名称（必需）<br>`logstore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关定时SQL任务<br>- 限制返回结果数量避免获取过多数据         |  
+| `sls_list_ingestions` | 列出项目内的OSS导入任务，支持名称模糊搜索        | `project`：SLS项目名称（必需）<br>`logstore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关OSS导入任务<br>- 限制返回结果数量避免获取过多数据         |  
 
 ##### 应用相关
 | 工具名称 | 用途 | 关键参数 | 最佳实践 |  
