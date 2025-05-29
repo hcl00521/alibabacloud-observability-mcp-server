@@ -35,7 +35,6 @@
 | `sls_list_osshdfs_exports` | 列出项目内的OSS-HDFS投递任务，支持名称模糊搜索   | `project`：SLS项目名称（必需）<br>`logStore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关OSS-HDFS投递任务<br>- 限制返回结果数量避免获取过多数据    |  
 | `sls_list_scheduled_sqls` | 列出项目内的定时SQL任务，支持名称模糊搜索        | `project`：SLS项目名称（必需）<br>`logStore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关定时SQL任务<br>- 限制返回结果数量避免获取过多数据         |  
 | `sls_list_ingestions` | 列出项目内的OSS导入任务，支持名称模糊搜索        | `project`：SLS项目名称（必需）<br>`logStore`：日志存储名称（可选，模糊搜索）<br>`size`：返回结果数量上限（默认10）<br>`regionId`：阿里云区域ID | - 确定项目后使用此工具查找相关OSS导入任务<br>- 限制返回结果数量避免获取过多数据         |  
-                   |  
 
 ##### 应用相关
 | 工具名称 | 用途 | 关键参数 | 最佳实践 |  
