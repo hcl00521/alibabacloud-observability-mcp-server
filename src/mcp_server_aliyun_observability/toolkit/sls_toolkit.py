@@ -543,8 +543,7 @@ class SLSToolkit:
                 ctx: Context,
                 project: str = Field(...,
                                      description="sls project name,must exact match,should not contain chinese characters"),
-                logstore: str = Field(...,
-                                     description="sls logstore name,must exact match,should not contain chinese characters"),
+                logstore: str = Field('', description="log store name,must exact match,should not contain chinese characters"),
                 size: int = Field(10, description="size, max is 200", ge=1, le=200),
                 regionId: str = Field(default=..., description="aliyun region id"),
         ) -> dict:
@@ -584,6 +583,7 @@ class SLSToolkit:
             Args:
                 ctx: MCP上下文，用于访问SLS客户端
                 project: SLS项目名称，必须精确匹配
+                logstore: 存储库名称，必须精确匹配，值为空则表示所有存储库下
                 size: 拉取的数量, 范围1-200，默认10
                 regionId: 阿里云区域ID,region id format like "xx-xxx",like "cn-hangzhou"
 
@@ -633,8 +633,7 @@ class SLSToolkit:
                 ctx: Context,
                 project: str = Field(...,
                                      description="sls project name,must exact match,should not contain chinese characters"),
-                logstore: str = Field(...,
-                                      description="sls logstore name,must exact match,should not contain chinese characters"),
+                logstore: str = Field('', description="log store name,must exact match,should not contain chinese characters"),
                 size: int = Field(10, description="size, max is 200", ge=1, le=200),
                 regionId: str = Field(default=..., description="aliyun region id"),
         ) -> dict:
@@ -674,6 +673,7 @@ class SLSToolkit:
             Args:
                 ctx: MCP上下文，用于访问SLS客户端
                 project: SLS项目名称，必须精确匹配
+                logstore: 存储库名称，必须精确匹配，若值为空则表示所有存储库下
                 size: 拉取的数量, 范围1-200，默认10
                 regionId: 阿里云区域ID,region id format like "xx-xxx",like "cn-hangzhou"
 
@@ -723,8 +723,7 @@ class SLSToolkit:
                 ctx: Context,
                 project: str = Field(...,
                                      description="sls project name,must exact match,should not contain chinese characters"),
-                logstore: str = Field(...,
-                                      description="sls logstore name,must exact match,should not contain chinese characters"),
+                logstore: str = Field('', description="log store name,must exact match,should not contain chinese characters"),
                 size: int = Field(10, description="size, max is 200", ge=1, le=200),
                 regionId: str = Field(default=..., description="aliyun region id"),
         ) -> dict:
@@ -764,6 +763,7 @@ class SLSToolkit:
             Args:
                 ctx: MCP上下文，用于访问SLS客户端
                 project: SLS项目名称，必须精确匹配
+                logstore: 存储库名称，必须精确匹配，若值为空则表示所有存储库下
                 size: 拉取的数量, 范围1-200，默认10
                 regionId: 阿里云区域ID,region id format like "xx-xxx",like "cn-hangzhou"
 
@@ -813,8 +813,7 @@ class SLSToolkit:
                 ctx: Context,
                 project: str = Field(...,
                                      description="sls project name,must exact match,should not contain chinese characters"),
-                logstore: str = Field(...,
-                                      description="sls logstore name,must exact match,should not contain chinese characters"),
+                logstore: str = Field('', description="log store name,must exact match,should not contain chinese characters"),
                 size: int = Field(10, description="size, max is 200", ge=1, le=200),
                 regionId: str = Field(default=..., description="aliyun region id"),
         ) -> dict:
@@ -855,6 +854,7 @@ class SLSToolkit:
             Args:
                 ctx: MCP上下文，用于访问SLS客户端
                 project: SLS项目名称，必须精确匹配
+                logstore: 存储库名称，必须精确匹配，若值为空则表示所有存储库下
                 size: 拉取的数量, 范围1-200，默认10
                 regionId: 阿里云区域ID,region id format like "xx-xxx",like "cn-hangzhou"
 
@@ -904,8 +904,7 @@ class SLSToolkit:
                 ctx: Context,
                 project: str = Field(...,
                                      description="sls project name,must exact match,should not contain chinese characters"),
-                logstore: str = Field(...,
-                                      description="sls logstore name,must exact match,should not contain chinese characters"),
+                logstore: str = Field('', description="log store name,must exact match,should not contain chinese characters"),
                 size: int = Field(10, description="size, max is 200", ge=1, le=200),
                 regionId: str = Field(default=..., description="aliyun region id"),
         ) -> dict:
@@ -945,6 +944,7 @@ class SLSToolkit:
             Args:
                 ctx: MCP上下文，用于访问SLS客户端
                 project: SLS项目名称，必须精确匹配
+                logstore: 存储库名称，必须精确匹配，若值为空则表示所有存储库下
                 size: 拉取的数量, 范围1-200，默认10
                 regionId: 阿里云区域ID,region id format like "xx-xxx",like "cn-hangzhou"
 
@@ -994,8 +994,7 @@ class SLSToolkit:
                 ctx: Context,
                 project: str = Field(...,
                                      description="sls project name,must exact match,should not contain chinese characters"),
-                logstore: str = Field(...,
-                                      description="sls logstore name,must exact match,should not contain chinese characters"),
+                logstore: str = Field('', description="log store name,must exact match,should not contain chinese characters"),
                 size: int = Field(10, description="size, max is 200", ge=1, le=200),
                 regionId: str = Field(default=..., description="aliyun region id"),
         ) -> dict:
@@ -1035,6 +1034,7 @@ class SLSToolkit:
             Args:
                 ctx: MCP上下文，用于访问SLS客户端
                 project: SLS项目名称，必须精确匹配
+                logstore: 存储库名称，必须精确匹配，若值为空则表示所有存储库下
                 size: 拉取的数量, 范围1-200，默认10
                 regionId: 阿里云区域ID,region id format like "xx-xxx",like "cn-hangzhou"
 
